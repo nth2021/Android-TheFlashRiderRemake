@@ -1,5 +1,7 @@
 package com.example.android_theflashriderremake;
 
+import static com.google.firebase.messaging.Constants.MessagePayloadKeys.SENDER_ID;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -27,6 +29,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.firebase.messaging.RemoteMessage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -88,7 +92,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         database = FirebaseDatabase.getInstance();
-        riderInfoRef = database.getReference(Common.DRIVER_INFO_REFERENCE);
+        riderInfoRef = database.getReference(Common.RIDER_INFO_REFERENCE);
 
         providers = Arrays.asList(
                 new AuthUI.IdpConfig.PhoneBuilder().build(),
@@ -98,6 +102,12 @@ public class SplashScreenActivity extends AppCompatActivity {
             FirebaseUser user = myFireBaseAuth.getCurrentUser();
             if(user != null) {
 
+                //update token
+                FirebaseMessaging.getInstance().send(
+                        new RemoteMessage.Builder(SENDER_ID + "fcm.googleapis.com")
+                                .setMessageId("send")
+                                .addData("key", "value")
+                                .build());
                 checkUserFromFirebase();
             }
             else
@@ -187,6 +197,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 model.setFirstName(edt_first_name.getText().toString());
                 model.setLastName(edt_last_name.getText().toString());
                 model.setPhoneNumber(edt_phone.getText().toString());
+                model.setRating(0.0);
 
                 riderInfoRef.child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                         .setValue(model)
@@ -206,7 +217,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void goToHomeAcitivy(RiderModel riderModel) {
-        Common.currentUser = riderModel;
+        Common.currentRider = riderModel;
         startActivity(new Intent(this, HomeActivity.class));
         finish();
     }
