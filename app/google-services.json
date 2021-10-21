@@ -1,34 +1,137 @@
 {
   "project_info": {
-    "project_number": "15679340695",
-    "firebase_url": "https://android-theflashriderremake-default-rtdb.firebaseio.com",
-    "project_id": "android-theflashriderremake",
-    "storage_bucket": "android-theflashriderremake.appspot.com"
+    "project_number": "603839225118",
+    "firebase_url": "https://androidtheflash-2962b-default-rtdb.firebaseio.com",
+    "project_id": "androidtheflash-2962b",
+    "storage_bucket": "androidtheflash-2962b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:15679340695:android:6a5f78b79729d0f53329d2",
+        "mobilesdk_app_id": "1:603839225118:android:7e221a6ad1da281978bd0f",
         "android_client_info": {
           "package_name": "com.example.android_theflashriderremake"
         }
       },
       "oauth_client": [
         {
-          "client_id": "15679340695-b0phm27tafdatsmpth50ent8e7pd2u8b.apps.googleusercontent.com",
+          "client_id": "603839225118-akr9aa5gvjqh2feh0ldahakfnd8j5887.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android_theflashriderremake",
+            "certificate_hash": "461c04a80b70b96b5b01e1505879fb06ebc0a760"
+          }
+        },
+        {
+          "client_id": "603839225118-3ruk48tvhb5sfvn5o4cd931cml4h2vr7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCewnoTsBt94O0AavHv-2e_eX_FutthzXg"
+          "current_key": "AIzaSyCZlimJZUWjOSKw7D5AuU5MEbtNclQpHf4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "15679340695-b0phm27tafdatsmpth50ent8e7pd2u8b.apps.googleusercontent.com",
+              "client_id": "603839225118-3ruk48tvhb5sfvn5o4cd931cml4h2vr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603839225118:android:b750bc48711e954578bd0f",
+        "android_client_info": {
+          "package_name": "com.example.androidtheflash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603839225118-51uqusiler2evv75gt7m5dscbokoh39n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidtheflash",
+            "certificate_hash": "461c04a80b70b96b5b01e1505879fb06ebc0a760"
+          }
+        },
+        {
+          "client_id": "603839225118-3ruk48tvhb5sfvn5o4cd931cml4h2vr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZlimJZUWjOSKw7D5AuU5MEbtNclQpHf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603839225118-3ruk48tvhb5sfvn5o4cd931cml4h2vr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603839225118:android:d8dbe9cd58395bfe78bd0f",
+        "android_client_info": {
+          "package_name": "com.example.ridertheflash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603839225118-3ruk48tvhb5sfvn5o4cd931cml4h2vr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZlimJZUWjOSKw7D5AuU5MEbtNclQpHf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603839225118-3ruk48tvhb5sfvn5o4cd931cml4h2vr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603839225118:android:94d2de8e7be36a0478bd0f",
+        "android_client_info": {
+          "package_name": "com.example.theflashrider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603839225118-3ruk48tvhb5sfvn5o4cd931cml4h2vr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZlimJZUWjOSKw7D5AuU5MEbtNclQpHf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603839225118-3ruk48tvhb5sfvn5o4cd931cml4h2vr7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

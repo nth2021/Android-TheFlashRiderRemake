@@ -9,7 +9,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.AndroidTheFlashRiderRemake.AppBarOverlay">
+        android:theme="@style/Theme.RiderTheFlash.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -17,7 +17,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Light"
-            app:popupTheme="@style/Theme.AndroidTheFlashRiderRemake.PopupOverlay" />
+            app:popupTheme="@style/Theme.RiderTheFlash.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
